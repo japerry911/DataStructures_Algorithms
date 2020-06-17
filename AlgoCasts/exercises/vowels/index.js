@@ -7,6 +7,15 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+function vowels(str) {
+    return str.split('').filter(char => ['a', 'e', 'i', 'o', 'u'].indexOf(char.toLowerCase()) > -1).length;
+}
 
 module.exports = vowels;
+
+// Solution 1:
+/*
+function vowels(str) {
+    return str.split('').filter(char => ['a', 'e', 'i', 'o', 'u'].indexOf(char.toLowerCase()) > -1).length;
+}
+*/
